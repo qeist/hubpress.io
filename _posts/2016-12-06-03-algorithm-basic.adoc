@@ -1,1 +1,2 @@
-= [problem solving] algorithm basic
+= 03. algorithm basic
+:hp-tags: #problem solving #algorithm
