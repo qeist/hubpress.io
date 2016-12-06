@@ -1,1 +1,2 @@
-= [problem solving] algorithm intermediate02
+= 05. algorithm intermediate02
+:hp-tags: #problem solving #algorithm
