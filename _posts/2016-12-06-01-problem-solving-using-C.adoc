@@ -1,4 +1,4 @@
-= 01. C++
+= 01. problem solving using C++
 :hp-tags: #problem solving #algorithm
 
 
