@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Dec 2016 00:44:49 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Dec 2016 00:54:10 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>A preface about <a href="http://asciidoc.org">AsciiDoc</a>.</p>
+<p>hyperlink <a href="http://www.naver.com">go to naver</a></p>
 </div>
 </div>
 </div>
