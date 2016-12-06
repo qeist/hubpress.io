@@ -1,7 +1,7 @@
 = Introduction to AsciiDoc
 Doc Writer <doc@example.com>
 
-A preface about http://asciidoc.org[AsciiDoc].
+hyperlink http://www.naver.com[go to naver]
 
 == First Section
 
