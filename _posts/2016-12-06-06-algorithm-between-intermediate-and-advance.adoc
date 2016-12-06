@@ -1,1 +1,2 @@
-= [problem solving] algorithm between intermediate and advance
+= 06. algorithm between intermediate and advance
+:hp-tags: #problem solving #algorithm
