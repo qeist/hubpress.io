@@ -1,5 +1,8 @@
 = 01. problem solving using C++
 :hp-tags: #problem solving #algorithm
 
+= test 
+:author: Kyunam Kevin Kwak
+:email: qeistkwak@gmail.com
 
 == pair
