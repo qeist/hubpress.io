@@ -2,8 +2,8 @@
 :hp-tags: #problem solving #algorithm
 
 = test 
-:author: Kyunam Kevin Kwak
-:email: qeistkwak@gmail.com
+:author: Kismet Rainbow Chameleon
+:email: kismet@asciidoctor.org
 
 This journey begins...
 
