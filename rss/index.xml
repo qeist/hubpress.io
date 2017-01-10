@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 15:48:56 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 16:02:35 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>hyperlink <a href="http://www.naver.com">go to naver</a></p>
@@ -163,7 +163,53 @@ cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</code></pre>
 <div class="sect1">
 <h2 id="_vector">vector</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>vector는 배열이다.</p>
+</li>
+<li>
+<p>길이를 변경할 수 있는 배열이다</p>
+</li>
+<li>
+<p>#include &lt;vector&gt;</p>
+</li>
+</ul>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">vector_example01.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+	vector&lt;int&gt; v1;						// 길이가 0
+    vector&lt;int&gt; v2(10);					// 길이가 10
+    vector&lt;int&gt; v3(15, 1);				// 길이가 15, 초기값 1
+    vector&lt;int&gt; v4 = {1, 2, 3, 4, 5};
 
+    return 0;
+}</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">vector_example02.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+	vector&lt;pair&lt;int, int&gt;&gt;v5;
+    vector&lt;pair&lt;int, int&gt;&gt;v6 = {{1, 2}, {3, 4}};
+    vector&lt;vector&lt;int&gt;&gt; v7;
+
+    int n = 10, m = 20,
+    vector&lt;vector&lt;int&gt;&gt; v8(n, vector&lt;int&gt;(m));
+
+    return 0;
+}</code></pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
