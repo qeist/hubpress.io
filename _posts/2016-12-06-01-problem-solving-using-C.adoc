@@ -37,6 +37,27 @@ cout << p.second.first << ' ' << p.second.second << '\n';
 ----
 
 == tuple
+* tuple은 pair와 같지만 여러 개를 묶을 수 있다
+* .first, .second, .third, .fourth ... 가 아니고 get을 이용해서 인덱스로 접근해야 한다
+* tuple은 #include <tuple>에 정의되어 있다
+
+[[app-listing]]
+[source,c++]
+.tuple_example01.cpp
+----
+tuple<int, int, int> t1 = make_tuple(1, 2, 3);
+
+cout << get<0>(t1) << ' ';
+cout << get<1>(t1) << ' ';
+cout << get<2>(t1) << '\n';
+
+/*
+for (int i=0; i<3; i++) {
+    count << get<i>(t1) << '\n';
+}
+*/
+----
+* get<> 사이에 변수를 넣을 수는 없다
 == tie
 == vector
 == deque
