@@ -38,9 +38,9 @@
     <link href="//fonts.googleapis.com/" rel="dns-prefetch">
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/main.min.css?v=1484062878043"/>
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/custom.css?v=1484062878043"/>
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1484062878043"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/main.min.css?v=1484063251010"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/custom.css?v=1484063251010"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1484063251010"/>
 
 
 
@@ -70,7 +70,7 @@
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="//qeist.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1484062878043"></script>
+    <script src="//qeist.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1484063251010"></script>
 
     <link rel="canonical" href="https://qeist.github.io/2016/12/06/01-problem-solving-using-C.html" />
     <meta name="referrer" content="origin" />
@@ -277,20 +277,112 @@ for (int i=0; i&lt;3; i++) {
 <div class="ulist">
 <ul>
 <li>
-<p>get&lt;&gt; 사이에 변수를 넣을 수는 없다
-== tie
-== vector
-== deque
-== list
-== set
-== map
-== stack
-== queue
-== priority_queue
-== bitset</p>
+<p>get&lt;&gt; 사이에 변수를 넣을 수는 없다</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tie">tie</h2>
+<div class="sectionbody">
+<div id="app-listing" class="listingblock">
+<div class="title">tie_example01.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">auto t = make_tuple(10, 20, 30);
+
+int x = get&lt;0&gt;(t);
+int y = get&lt;1&gt;(t);
+int z = get&lt;2&gt;(t);
+
+cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; ' ' &lt;&lt; z &lt;&lt; '\n';
+
+x = y = z = 0;
+
+tie(x, y, z) = t; // (10, 20, 30)
+
+cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; ' ' &lt;&lt; z &lt;&lt; '\n';</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tie는 pair에도 사용할 수 있다.</p>
+</li>
+<li>
+<p>변수값을 무시해야 하는 경우에는 ignore를 사용한다</p>
+<div id="app-listing" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">.tie_example02.cpp</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>auto t = make_tuple(1, 2, 3);
+
+int x, y;
+tie(x, y, ignore) = t; // (1, 2)
+
+cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vector">vector</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deque">deque</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_list">list</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set">set</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_map">map</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stack">stack</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_queue">queue</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_priority_queue">priority_queue</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bitset">bitset</h2>
+<div class="sectionbody">
+
 </div>
 </div>
           </div>
@@ -356,7 +448,7 @@ for (int i=0; i&lt;3; i++) {
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script src="//qeist.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1484062878043"></script>
+    <script src="//qeist.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1484063251010"></script>
 
 
   </body>
