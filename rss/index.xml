@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 15:35:22 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 15:41:18 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>hyperlink <a href="http://www.naver.com">go to naver</a></p>
@@ -78,66 +78,51 @@ cout &lt;&lt; p.second.first &lt;&lt; ' ' &lt;&lt; p.second.second &lt;&lt; '\n'
 <div class="sect1">
 <h2 id="_tuple">tuple</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>tuple은 pair와 같지만 여러 개를 묶을 수 있다</p>
+</li>
+<li>
+<p>.first, .second, .third, .fourth &#8230;&#8203; 가 아니고 get을 이용해서 인덱스로 접근해야 한다</p>
+</li>
+<li>
+<p>tuple은 #include &lt;tuple&gt;에 정의되어 있다</p>
+</li>
+</ul>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">tuple_example01.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">tuple&lt;int, int, int&gt; t1 = make_tuple(1, 2, 3);
 
-</div>
-</div>
-<div class="sect1">
-<h2 id="_tie">tie</h2>
-<div class="sectionbody">
+cout &lt;&lt; get&lt;0&gt;(t1) &lt;&lt; ' ';
+cout &lt;&lt; get&lt;1&gt;(t1) &lt;&lt; ' ';
+cout &lt;&lt; get&lt;2&gt;(t1) &lt;&lt; '\n';
 
+/*
+for (int i=0; i&lt;3; i++) {
+    count &lt;&lt; get&lt;i&gt;(t1) &lt;&lt; '\n';
+}
+*/</code></pre>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_vector">vector</h2>
-<div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>get&lt;&gt; 사이에 변수를 넣을 수는 없다
+== tie
+== vector
+== deque
+== list
+== set
+== map
+== stack
+== queue
+== priority_queue
+== bitset</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_deque">deque</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_list">list</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_set">set</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_map">map</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_stack">stack</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_queue">queue</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_priority_queue">priority_queue</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_bitset">bitset</h2>
-<div class="sectionbody">
-
 </div>
 </div>]]></description><link>https://qeist.github.io/2016/12/06/01-problem-solving-using-C.html</link><guid isPermaLink="true">https://qeist.github.io/2016/12/06/01-problem-solving-using-C.html</guid><category><![CDATA[#problem solving #algorithm]]></category><dc:creator><![CDATA[Kyunam Kevin Kwak]]></dc:creator><pubDate>Tue, 06 Dec 2016 00:00:00 GMT</pubDate></item></channel></rss>
