@@ -58,7 +58,40 @@ for (int i=0; i<3; i++) {
 */
 ----
 * get<> 사이에 변수를 넣을 수는 없다
+
 == tie
+[[app-listing]]
+[source,c++]
+.tie_example01.cpp
+----
+auto t = make_tuple(10, 20, 30);
+
+int x = get<0>(t);
+int y = get<1>(t);
+int z = get<2>(t);
+
+cout << x << ' ' << y << ' ' << z << '\n';
+
+x = y = z = 0;
+
+tie(x, y, z) = t; // (10, 20, 30)
+
+cout << x << ' ' << y << ' ' << z << '\n';
+----
+* tie는 pair에도 사용할 수 있다.
+* 변수값을 무시해야 하는 경우에는 ignore를 사용한다
+[[app-listing]]
+[source,c++]
+.tie_example02.cpp
+----
+auto t = make_tuple(1, 2, 3);
+
+int x, y;
+tie(x, y, ignore) = t; // (1, 2)
+
+cout << x << ' ' << y << '\n';
+----
+
 == vector
 == deque
 == list
