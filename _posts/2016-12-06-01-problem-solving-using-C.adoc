@@ -1,11 +1,20 @@
 = 01. problem solving using C++
 :hp-tags: #problem solving #algorithm
 
-= test 
-:author: Kismet Rainbow Chameleon
-:email: kismet@asciidoctor.org
-
-This journey begins...
-
 == pair
+* pair를 사용하면 두 자료형 T1과 T2를 묶을 수 있다
+* 항상 두 개를 묶는다
+* 첫 번째 자료는 first
+* 두 번째 자료는 second로 접근할 수 있다.
 
+== tuple
+== tie
+== vector
+== deque
+== list
+== set 
+== map
+== stack
+== queue
+== priority_queue
+== bitset
