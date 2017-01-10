@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 13:07:46 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 15:35:22 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>hyperlink <a href="http://www.naver.com">go to naver</a></p>
@@ -50,10 +50,27 @@
 </ul>
 </div>
 <div id="app-listing" class="listingblock">
-<div class="title">app.rb</div>
+<div class="title">pair_example01.cpp</div>
 <div class="content">
 <pre class="highlight"><code class="language-c++" data-lang="c++">pair&lt;int, int&gt; p1;
-cout &lt;&lt; p1.first &lt;&lt; ' ' &lt;&lt; p1.second &lt;&lt; '\n';</code></pre>
+cout &lt;&lt; p1.first &lt;&lt; ' ' &lt;&lt; p1.second &lt;&lt; '\n';
+
+p1 = make_pair(10, 20);
+cout &lt;&lt; p1.first &lt;&lt; ' ' &lt;&lt; p1.second &lt;&lt; '\n'
+
+p1 = pair&lt;int, int&gt;(30, 40);
+cout &lt;&lt; p1.first &lt;&lt; ' ' &lt;&lt; p1.second &lt;&lt; '\n'
+
+pair&lt;int, int&gt; p2(50, 60);
+cout &lt;&lt; p2.first &lt;&lt; ' ' &lt;&lt; p2.second &lt;&lt; '\n';</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">pair_example02.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">pair&lt;pair&lt;int, int&gt;&gt; p = make_pair(make_pair(10, 20), make_pair(30, 40));
+cout &lt;&lt; p.first.first &lt;&lt; ' ' &lt;&lt; p.first.second &lt;&lt; ' ';
+cout &lt;&lt; p.second.first &lt;&lt; ' ' &lt;&lt; p.second.second &lt;&lt; '\n';</code></pre>
 </div>
 </div>
 </div>
