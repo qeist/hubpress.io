@@ -5,4 +5,7 @@
 :author: Kyunam Kevin Kwak
 :email: qeistkwak@gmail.com
 
+This journey begins...
+
 == pair
+
