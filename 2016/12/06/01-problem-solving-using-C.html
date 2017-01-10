@@ -38,9 +38,9 @@
     <link href="//fonts.googleapis.com/" rel="dns-prefetch">
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/main.min.css?v=1484063251010"/>
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/custom.css?v=1484063251010"/>
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1484063251010"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/main.min.css?v=1484063336311"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/custom.css?v=1484063336311"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1484063336311"/>
 
 
 
@@ -70,7 +70,7 @@
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="//qeist.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1484063251010"></script>
+    <script src="//qeist.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1484063336311"></script>
 
     <link rel="canonical" href="https://qeist.github.io/2016/12/06/01-problem-solving-using-C.html" />
     <meta name="referrer" content="origin" />
@@ -311,22 +311,18 @@ cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; ' ' &lt;&lt; z &lt;&lt; '\n';</
 </li>
 <li>
 <p>변수값을 무시해야 하는 경우에는 ignore를 사용한다</p>
-<div id="app-listing" class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-c++" data-lang="c++">.tie_example02.cpp</code></pre>
-</div>
-</div>
 </li>
 </ul>
 </div>
-<div class="listingblock">
+<div id="app-listing" class="listingblock">
+<div class="title">tie_example02.cpp</div>
 <div class="content">
-<pre>auto t = make_tuple(1, 2, 3);
+<pre class="highlight"><code class="language-c++" data-lang="c++">auto t = make_tuple(1, 2, 3);
 
 int x, y;
 tie(x, y, ignore) = t; // (1, 2)
 
-cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</pre>
+cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</code></pre>
 </div>
 </div>
 </div>
@@ -448,7 +444,7 @@ cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</pre>
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script src="//qeist.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1484063251010"></script>
+    <script src="//qeist.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1484063336311"></script>
 
 
   </body>
