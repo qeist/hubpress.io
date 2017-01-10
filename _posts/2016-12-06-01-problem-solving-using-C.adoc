@@ -6,6 +6,8 @@
 * 항상 두 개를 묶는다
 * 첫 번째 자료는 first
 * 두 번째 자료는 second로 접근할 수 있다.
+* #include <utility> 에 있는데, algorithm, vector와 같은 헤더파일에서 이미 include 하고 있기 때문에 따로 include 하는 경우는 없다.
+* make_pair를 이용하거나, 생성자를 이용해서 만들 수 있다.
 
 == tuple
 == tie
