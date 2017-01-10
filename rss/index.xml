@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 15:47:31 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kyunam Kevin Kwak's Blog]]></title><description><![CDATA[Kyunam Kevin Kwak's Blog]]></description><link>https://qeist.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Jan 2017 15:48:56 GMT</lastBuildDate><atom:link href="https://qeist.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Introduction to AsciiDoc]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>hyperlink <a href="http://www.naver.com">go to naver</a></p>
@@ -144,22 +144,18 @@ cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; ' ' &lt;&lt; z &lt;&lt; '\n';</
 </li>
 <li>
 <p>변수값을 무시해야 하는 경우에는 ignore를 사용한다</p>
-<div id="app-listing" class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-c++" data-lang="c++">.tie_example02.cpp</code></pre>
-</div>
-</div>
 </li>
 </ul>
 </div>
-<div class="listingblock">
+<div id="app-listing" class="listingblock">
+<div class="title">tie_example02.cpp</div>
 <div class="content">
-<pre>auto t = make_tuple(1, 2, 3);
+<pre class="highlight"><code class="language-c++" data-lang="c++">auto t = make_tuple(1, 2, 3);
 
 int x, y;
 tie(x, y, ignore) = t; // (1, 2)
 
-cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</pre>
+cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</code></pre>
 </div>
 </div>
 </div>
