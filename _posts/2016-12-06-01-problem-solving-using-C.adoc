@@ -11,10 +11,12 @@
 
 [[app-listing]]
 [source,c++]
-.app.rb
+.pair_example01.cpp
 ----
 pair<int, int> p1;
 cout << p1.first << ' ' << p1.second << '\n';
+
+
 ----
 
 == tuple
