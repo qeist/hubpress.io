@@ -3,14 +3,3 @@
 
 
 == pair
-== tuple
-== tie
-== vector
-== deque
-== list
-== set 
-== map
-== stack
-== queue
-== priority_queue
-== bitset
