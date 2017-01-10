@@ -38,9 +38,9 @@
     <link href="//fonts.googleapis.com/" rel="dns-prefetch">
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/main.min.css?v=1484063336311"/>
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/custom.css?v=1484063336311"/>
-    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1484063336311"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/main.min.css?v=1484064155866"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/custom.css?v=1484064155866"/>
+    <link rel="stylesheet" href="//qeist.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1484064155866"/>
 
 
 
@@ -70,7 +70,7 @@
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="//qeist.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1484063336311"></script>
+    <script src="//qeist.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1484064155866"></script>
 
     <link rel="canonical" href="https://qeist.github.io/2016/12/06/01-problem-solving-using-C.html" />
     <meta name="referrer" content="origin" />
@@ -330,7 +330,53 @@ cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</code></pre>
 <div class="sect1">
 <h2 id="_vector">vector</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>vector는 배열이다.</p>
+</li>
+<li>
+<p>길이를 변경할 수 있는 배열이다</p>
+</li>
+<li>
+<p>#include &lt;vector&gt;</p>
+</li>
+</ul>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">vector_example01.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+	vector&lt;int&gt; v1;						// 길이가 0
+    vector&lt;int&gt; v2(10);					// 길이가 10
+    vector&lt;int&gt; v3(15, 1);				// 길이가 15, 초기값 1
+    vector&lt;int&gt; v4 = {1, 2, 3, 4, 5};
 
+    return 0;
+}</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">vector_example02.cpp</div>
+<div class="content">
+<pre class="highlight"><code class="language-c++" data-lang="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+	vector&lt;pair&lt;int, int&gt;&gt;v5;
+    vector&lt;pair&lt;int, int&gt;&gt;v6 = {{1, 2}, {3, 4}};
+    vector&lt;vector&lt;int&gt;&gt; v7;
+
+    int n = 10, m = 20,
+    vector&lt;vector&lt;int&gt;&gt; v8(n, vector&lt;int&gt;(m));
+
+    return 0;
+}</code></pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -444,7 +490,7 @@ cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y &lt;&lt; '\n';</code></pre>
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script src="//qeist.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1484063336311"></script>
+    <script src="//qeist.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1484064155866"></script>
 
 
   </body>
